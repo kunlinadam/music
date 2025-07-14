@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>音乐自动播放</title>
+  <title>🎵 给你的一首歌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+    audio {
+      width: 90%;
+      max-width: 400px;
+    }
+  </style>
 </head>
 <body>
-  <h2>🎵 正在播放音乐...</h2>
-
-  <audio autoplay controls>
+  <h1>🎵 正在播放音乐</h1>
+  <p>送你一段特别的旋律</p>
+  <audio autoplay loop controls>
     <source src="zy.mp3" type="audio/mpeg">
     您的浏览器不支持 audio 标签。
   </audio>
